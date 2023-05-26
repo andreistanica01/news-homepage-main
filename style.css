@@ -1,0 +1,452 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+  font-family: 'Inter Bold';
+  src: url(/assets/fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Inter Extra Bold';
+  src: url(/assets/fonts/static/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: 'Inter Regular';
+  src: url(/assets/fonts/static/Inter-Regular.ttf);
+}
+
+body {
+  background-color: #fffdfa;
+  height: auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.desktop-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Inter Regular';
+  color: rgba(94, 96, 122, 1);
+  font-size: 0.6rem;
+  max-width: 1110px;
+  width: 100%;
+  margin: 89px 165px 0px 165px;
+}
+
+.desktop-nav img {
+  min-width: 65px;
+}
+
+.nav-items {
+  display: flex;
+  max-width: 431px;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+
+.nav-items h1:hover {
+  color: rgba(241, 93, 81, 1);
+  transition: 1s;
+  cursor: pointer;
+}
+
+.nav-items h1 {
+  margin-right: 10px;
+}
+
+/* MOBILE NAV */
+
+.mobile-nav-burger {
+  display: none;
+}
+
+span {
+  width: 40px;
+  height: 3px;
+  background-color: black;
+  border-radius: 100px;
+}
+
+.mobile-nav-items {
+  position: absolute;
+  z-index: 4;
+  text-align: left;
+  height: 100%;
+  max-width: 256px;
+  background-color: white;
+  color: rgba(0, 0, 26, 1);
+  right: 0;
+  font-family: 'Inter Regular';
+  font-size: 1.1rem;
+}
+
+.mobile-nav-items h1 {
+  padding: 24px;
+}
+
+.first-nav-item {
+  margin-top: 144px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.mobile-nav-close {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.mobile-nav-overlay {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.display-none {
+  display: none;
+}
+
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 55.1px 165px 0px 165px;
+  max-width: 1110px;
+}
+
+/* LEFT SIDE */
+
+.left-side {
+  margin-right: 30px;
+}
+
+.left-side img {
+  width: 730px;
+}
+
+.left-side-bot {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+  min-height: 150px;
+}
+
+.title-container {
+  max-width: 350px;
+  width: 100%;
+  margin-right: 30px;
+}
+
+.title-container h1 {
+  font-family: 'Inter Extra Bold';
+  font-size: 3.5rem;
+  line-height: 56px;
+}
+
+.read-more-container {
+  max-width: 350px;
+  width: 100%;
+}
+
+.read-more-container p {
+  font-family: 'Inter Regular';
+  color: rgba(94, 96, 122, 1);
+  font-size: 0.93rem;
+}
+
+.read-more-container a {
+  padding: 15px 35px 15px 35px;
+  text-decoration: none;
+  color: rgba(255, 253, 250, 1);
+  background-color: #f15d51;
+  font-family: 'Inter Bold';
+  letter-spacing: 4.38px;
+  font-size: 0.87rem;
+  display: inline-block;
+  margin-top: 29px;
+  text-align: center;
+}
+
+.read-more-container a:link {
+  color: rgba(255, 253, 250, 1);
+}
+
+.read-more-container a:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 26, 1);
+  transition: 1s;
+}
+
+/* RIGHT SIDE */
+
+.right-side {
+  max-width: 350px;
+  max-height: 511px;
+  overflow: auto;
+  color: #fffdfa;
+  background-color: #00001a;
+  padding: 32px 24px 31px 24px;
+}
+
+.tab-font {
+  font-family: 'Inter';
+  font-size: 0.6rem;
+}
+
+.tab-font h1:hover {
+  color: rgba(233, 170, 82, 1);
+  transition: 1s;
+  cursor: pointer;
+}
+
+.tab-font p {
+  font-family: 'Inter Regular';
+  color: rgba(197, 198, 206, 1);
+  font-size: 0.9rem;
+  margin-top: 9px;
+}
+
+.right-side-title {
+  color: rgba(233, 170, 82, 1);
+  font-family: 'Inter';
+}
+
+.tab1 {
+  padding-bottom: 29px;
+  padding-top: 20px;
+  border-bottom: 1px solid #5e607a;
+}
+
+.tab2 {
+  padding-bottom: 29px;
+  padding-top: 31px;
+  border-bottom: 1px solid #5e607a;
+}
+
+.tab3 {
+  padding-top: 31px;
+}
+
+/* FOOTER  */
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-wrapper {
+  display: flex;
+  margin: 71px 165px 0px 165px;
+  max-width: 1110px;
+  width: 100%;
+}
+
+article img {
+  width: 100%;
+  max-width: 100px;
+  min-width: 56px;
+  height: 127px;
+  max-height: 127px;
+  object-fit: cover;
+}
+
+.art {
+  display: flex;
+  max-width: 350px;
+  margin-right: 30px;
+}
+
+.art div {
+  margin-left: 24px;
+}
+
+.art p {
+  font-size: 0.93rem;
+  font-family: 'Inter';
+  color: rgba(94, 96, 122, 1);
+  margin-top: 9px;
+}
+
+.art-number {
+  color: #c5c6ce;
+  font-size: 2rem;
+  font-family: 'Inter';
+}
+
+.art-title {
+  color: rgba(0, 0, 26, 1);
+  font-size: 1.12rem;
+  font-family: 'Inter Bold';
+}
+
+.art-title:hover {
+  color: rgba(241, 93, 81, 1);
+  transition: 1s;
+  cursor: pointer;
+}
+
+.art03 {
+  margin-right: 0px;
+}
+
+/* MEDIA AT 560PX */
+
+@media (max-width: 35rem) {
+  .desktop-nav {
+    max-width: 544px;
+    width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .hero-wrapper {
+    max-width: 544px;
+    width: 100%;
+    min-height: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+    flex-direction: column;
+  }
+
+  .left-side {
+    margin-right: 0;
+  }
+
+  .left-side img {
+    object-fit: cover;
+    height: 300px;
+  }
+
+  .left-side-bot {
+    flex-direction: column;
+  }
+
+  .read-more-container p {
+    margin-top: 16px;
+  }
+
+  .right-side {
+    overflow: visible;
+    max-height: 100%;
+    max-width: 100%;
+    margin-top: 64px;
+  }
+
+  .left-side-title {
+    font-size: 0.4rem;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+    margin: 64px 16px 0px 16px;
+  }
+
+  .art02 {
+    margin-top: 32px;
+  }
+
+  .art03 {
+    margin-top: 32px;
+  }
+
+  .mobile-nav-burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 40px;
+    width: 100%;
+    height: 23px;
+    cursor: pointer;
+  }
+}

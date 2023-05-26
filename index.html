@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+       <!-- DESKTOP NAV -->
+      <nav class="desktop-nav">
+        <div><img src="/assets/images/logo.svg" alt="Hero Photo" /></div>
+        <div class="nav-items">
+          <h1>Home</h1>
+          <h1>New</h1>
+          <h1>Popular</h1>
+          <h1>Trending</h1>
+          <h1>Categories</h1>
+        </div>
+        <!-- MOBILE NAV -->
+        <div class="mobile-nav-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+      <div class="mobile-nav-items display-none">
+        <h1 class="mobile-nav-close">&#x2715</h1>
+        <h1 class="first-nav-item cursor">Home</h1>
+        <h1 class="cursor">New</h1>
+        <h1 class="cursor">Popular</h1>
+        <h1 class="cursor">Trending</h1>
+        <h1 class="cursor">Categories</h1>
+      </div>
+      <div class="mobile-nav-overlay display-none"></div>
+    </header>
+    <main>
+      <div class="hero-wrapper">
+        <div class="left-side">
+          <img src="/assets/images/image-web-3-desktop.jpg" />
+          <div class="left-side-bot">
+            <div class="title-container">
+              <h1 class="left-side-title">The Bright Future of Web 3.0?</h1>
+            </div>
+            <div class="read-more-container">
+              <p>
+                We dive into the next evolution of the web that claims to put the power of the
+                platforms back into the hands of the people. But is it really fulfilling its
+                promise?
+              </p>
+              <a href="">READ MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="right-side">
+          <h1 class="right-side-title">New</h1>
+          <div class="tab1 tab-font">
+            <h1>Hydrogen VS Electric Cars</h1>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <div class="tab2 tab-font">
+            <h1>The Downsides of AI Artistry</h1>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          </div>
+          <div class="tab3 tab-font">
+            <h1>Is VC Funding Drying Up?</h1>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-wrapper">
+        <article class="art01 art">
+          <img src="/assets/images/image-retro-pcs.jpg" />
+          <div>
+            <h1 class="art-number">01</h1>
+            <h1 class="art-title">Reviving Retro PCs</h1>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </article>
+        <article class="art02 art">
+          <img src="/assets/images/image-top-laptops.jpg" />
+          <div>
+            <h1 class="art-number">02</h1>
+            <h1 class="art-title">Top 10 Laptops of 2022</h1>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </article>
+        <article class="art03 art">
+          <img src="/assets/images/image-gaming-growth.jpg" />
+          <div>
+            <h1 class="art-number">03</h1>
+            <h1 class="art-title">The Growth of Gaming</h1>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </article>
+      </div>
+    </footer>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+
+    <!-- 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} -->
+    <script src="script.js"></script>
+  </body>
+</html>
