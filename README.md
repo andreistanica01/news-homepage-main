@@ -54,7 +54,7 @@ JS
 
 ### Useful resources
 
-- [Josh Comeau CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Josh Comeau CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/) - This helped me for resetting the worst css features. I really liked this pattern and will use it going forward.
 
 ## Author
 
